@@ -7,42 +7,7 @@ public class Test {
     public boolean flag = true;
     public List<String> typeList;
 
-    public static void main(String[] args) {
-        String json = "{\n" +
-                "\t\"cellphone\": \"18521515392\",\n" +
-                "\t\"message\": \"查询成功\",\n" +
-                "\t\"name\": \"温程\",\n" +
-                "\t\"resultDesc\": [{\n" +
-                "\t\t\"hitDetailId\": \"5b0673cb87e4300001636195\",\n" +
-                "\t\t\"rules\": [{\n" +
-                "\t\t\t\"detail\": \"未命中羊毛党名单\",\n" +
-                "\t\t\t\"name\": \"命中羊毛党名单\",\n" +
-                "\t\t\t\"result\": false,\n" +
-                "\t\t\t\"ruleId\": \"pycredit_econnoisserur_state\"\n" +
-                "\t\t}],\n" +
-                "\t\t\"score\": 0,\n" +
-                "\t\t\"source\": \"tongdun\",\n" +
-                "\t\t\"sourceName\": \"同盾\",\n" +
-                "\t\t\"suggest\": \"建议通过\"\n" +
-                "\t}, {\n" +
-                "\t\t\"hitDetailId\": \"5b0673ccd13e300001474d00\",\n" +
-                "\t\t\"rules\": [{\n" +
-                "\t\t\t\"detail\": \"未命中羊毛党名单\",\n" +
-                "\t\t\t\"name\": \"命中羊毛党名单\",\n" +
-                "\t\t\t\"result\": false,\n" +
-                "\t\t\t\"ruleId\": \"pycredit_econnoisserur_state\"\n" +
-                "\t\t}],\n" +
-                "\t\t\"score\": 0,\n" +
-                "\t\t\"source\": \"pycredit\",\n" +
-                "\t\t\"sourceName\": \"鹏元\",\n" +
-                "\t\t\"suggest\": \"建议通过\"\n" +
-                "\t}],\n" +
-                "\t\"source\": [\"tongdun\", \"pycredit\"],\n" +
-                "\t\"ssn\": \"45070219861116513X\",\n" +
-                "\t\"status\": \"OK\"\n" +
-                "}";
-        Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json);
-        String[] a = flattenJson.keySet().toArray(new String[0]);
+    public Map<String, Map<String, Map<String, Object>>> getThreeMap(Map<String, Object> flattenJson) {
         Map<String, Map<String, Map<String, Object>>> grouped = new HashMap<>();
 
         for (Map.Entry<String, Object> entry : flattenJson.entrySet()) {
@@ -59,6 +24,7 @@ public class Test {
             // second level map
             Map<String, Map<String, Object>> secondMap = grouped.get(firstKey);
             String secondKey = removeLast(entry.getKey());
+
             if (!secondMap.containsKey(secondKey)) {
                 secondMap.put(secondKey, new HashMap<String, Object>());
             }
@@ -68,13 +34,7 @@ public class Test {
             Map<String, Object> thirdMap = secondMap.get(secondKey);
             thirdMap.put(thirdKey, entry.getValue());
         }
-
-        Test test = new Test();
-        test.getTotalRows(grouped);
-        System.out.println(test.totalRow);
-        Map<String, List<Object>> result = test.insertData(grouped);
-        test.tranverse(result);
-        System.out.println(test.getFinalSQL(result,"test2"));
+        return grouped;
     }
 
     // remove []
@@ -86,10 +46,19 @@ public class Test {
 
     public static String removeLast(String str) {
         int lastIndex = str.lastIndexOf(".");
+
         if (lastIndex != -1) {
             return str.substring(0, lastIndex);
         }
+
+        // *****************revise here
         return str;
+    }
+
+
+
+    public static String rmOutBracket(String str) {
+        return str.replaceAll("\\[|\\]", "");
     }
 
     public static String getPreForKey(String str) throws Exception {
@@ -126,7 +95,8 @@ public class Test {
 
     public static String getColumn(String entryKey, String thirdEntryKey) {
         if (entryKey.equals("base")) {
-            return thirdEntryKey;
+            // it is array but there is no field in it, so take it as base!
+            return rmOutBracket(thirdEntryKey);
         } else {
             return entryKey + "." + thirdEntryKey;
         }
@@ -209,8 +179,6 @@ public class Test {
             }
             System.out.println("********" + k);
         }
-
-
     }
 
     public String getInnerSQL(Map<String, List<Object>> result) {
