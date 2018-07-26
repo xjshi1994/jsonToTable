@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0a49fa2-9933-4d4d-bb80-fbd15e7e7026" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="42" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlattJsonView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>import com\.github\.wnameless\.json\.flattener\.JsonFlattener\;\n\nimport java\.util\.\*\;\n\npublic class Test \{\n    public int totalRow \= 0\;\n    public boolean flag \= true\;\n    public static void main\(String\[\] args\) \{\n        String json \= \&quot;\{\\n\&quot; \+\n                \&quot;\\t\\\&quot;finalDecision\\\&quot;\: \\\&quot;REVIEW\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;finalScore\\\&quot;\: 20\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;message\\\&quot;\: \\\&quot;查询成功\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;riskItems\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;decision\\\&quot;\: \\\&quot;Accept\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskDetail\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;description\\\&quot;\: \\\&quot;身份证命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;greyListDetails\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;evidenceTime\\\&quot;\: 1506246327000\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudType\\\&quot;\: \\\&quot;suspiciousLoan\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;riskLevel\\\&quot;\: \\\&quot;中\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;value\\\&quot;\: \\\&quot;362201198509090027\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;hitTypeDisplayName\\\&quot;\: \\\&quot;借款人身份证\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;type\\\&quot;\: \\\&quot;grey_list\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskName\\\&quot;\: \\\&quot;身份证命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;ruleId\\\&quot;\: 12673553\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;score\\\&quot;\: 10\\n\&quot; \+\n                \&quot;\\t\}\, \{\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;decision\\\&quot;\: \\\&quot;Accept\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskDetail\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;description\\\&quot;\: \\\&quot;手机号命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;greyListDetails\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;evidenceTime\\\&quot;\: 1506246327000\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudType\\\&quot;\: \\\&quot;suspiciousLoan\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;riskLevel\\\&quot;\: \\\&quot;中\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;value\\\&quot;\: \\\&quot;18311359005\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;hitTypeDisplayName\\\&quot;\: \\\&quot;借款人手机\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;type\\\&quot;\: \\\&quot;grey_list\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskName\\\&quot;\: \\\&quot;手机号命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;ruleId\\\&quot;\: 12673743\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;score\\\&quot;\: 10\\n\&quot; \+\n                \&quot;\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;status\\\&quot;\: \\\&quot;OK\\\&quot;\\n\&quot; \+\n                \&quot;\}\\n\&quot;\;\n        Map\&lt;String\, Object\&gt; flattenJson \= JsonFlattener\.flattenAsMap\(json\)\;\n        String\[\] a \= flattenJson\.keySet\(\)\.toArray\(new String\[0\]\)\;\n        Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; grouped \= new HashMap\&lt;\&gt;\(\)\;\n\n        for \(Map\.Entry\&lt;String\, Object\&gt; entry \: flattenJson\.entrySet\(\)\) \{\n            String firstKey \= null\;\n            try \{\n                firstKey \= getPreForKey\(entry\.getKey\(\)\)\;\n            \} catch \(Exception e\) \{\n                firstKey \= \&quot;base\&quot;\;\n            \}\n            if \(\! grouped\.containsKey\(firstKey\)\) \{\n                grouped\.put\(firstKey\, new HashMap\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\(\)\)\;\n            \}\n\n            \/\/ second level map\n            Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondMap \= grouped\.get\(firstKey\)\;\n            String secondKey \= removeLast\(entry\.getKey\(\)\)\;\n            if\(\!secondMap\.containsKey\(secondKey\)\) \{\n                secondMap\.put\(secondKey\, new HashMap\&lt;String\, Object\&gt;\(\)\)\;\n            \}\n\n            \/\/ third level map\n            String thirdKey \= getLastField\(entry\.getKey\(\)\)\;\n            Map\&lt;String\, Object\&gt; thirdMap \= secondMap\.get\(secondKey\)\;\n            thirdMap\.put\(thirdKey\, entry\.getValue\(\)\)\;\n        \}\n\n        int k \= 0\;\n        for\(Map\.Entry\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: grouped\.entrySet\(\)\) \{\n            System\.out\.printf\(\&quot;This GROUP \%d \%s\%n\&quot;\, k\+\+\, entry\.getKey\(\)\)\;\n            System\.out\.println\(\)\;\n        \}\n\n        System\.out\.printf\(\&quot;This Table schema \%n\%s\&quot;\, getTableSchema\(grouped\)\)\;\n\n\n        Test test \= new Test\(\)\;\n        test\.getTotalRows\(grouped\)\;\n    \}\n    \/\/ remove \[\]\n    public static String removeBracket\(String str\) \{\n        String result \= \&quot;\&quot;\;\n        result \= str\.replaceAll\(\&quot;\\\\\[\.\*\?\\\\\]\&quot;\, \&quot;\&quot;\)\;\n        return result\;\n    \}\n\n    public static String removeLast\(String str\) \{\n        int lastIndex \= str\.lastIndexOf\(\&quot;\.\&quot;\)\;\n        if \(lastIndex \!\= \-1\) \{\n            return str\.substring\(0\,lastIndex\)\;\n        \}\n        return str\;\n    \}\n\n    public static String getPreForKey\(String str\) throws Exception \{\n        if \(str\.equals\(removeLast\(str\)\)\) \{\n            throw new Exception\(\)\;\n        \}\n        return removeBracket\(removeLast\(str\)\)\;\n    \}\n\n    public static String getLastField\(String str\) \{\n        int lastIndex \= str\.lastIndexOf\(\&quot;\.\&quot;\)\;\n        if \(lastIndex \!\= \-1\) \{\n            return str\.substring\(lastIndex \+ 1\,str\.length\(\)\)\;\n        \}\n        return str\;\n    \}\n\n    public static String getTableSchema\(Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; group\) \{\n        String result \= \&quot;\&quot;\;\n        for\(Map\.Entry\&lt;String\,Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: group\.entrySet\(\)\) \{\n            Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondMap \= entry\.getValue\(\)\;\n            for\(Map\.Entry\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondEntry \: secondMap\.entrySet\(\)\) \{\n                if \(entry\.getKey\(\)\.equals\(\&quot;base\&quot;\)\) \{\n                    result \= result \+ \&quot; \&quot; \+ secondEntry\.getKey\(\)\;\n                \}else \{\n                    Map\&lt;String\, Object\&gt; thirdMap \= secondEntry\.getValue\(\)\;\n                    for\(Map\.Entry\&lt;String\, Object\&gt; thirdEntry \: thirdMap\.entrySet\(\)\)\n                        result \= result \+ \&quot; \&quot; \+ entry\.getKey\(\) \+\&quot;\.\&quot; \+thirdEntry\.getKey\(\)\;\n                \}\n            \}\n        \}\n        return result\;\n    \}\n    \n    public static String getColumn\(String entryKey\, String thirdEntryKey\) \{\n        if \(entryKey\.equals\(\&quot;base\&quot;\)\) \{\n            return thirdEntryKey\;\n        \} else \{\n            return entryKey\+\&quot;\.\&quot;\+thirdEntryKey\;\n        \}\n    \}\n\n    public void getTotalRows\(Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; group\) \{\n        \/\/ Except \&quot;base\&quot; in the first map\, multiply nums of key in each group in second map\.\n        List\&lt;Integer\&gt; numOfGroup \= new LinkedList\&lt;\&gt;\(\)\;\n        for\(Map\.Entry\&lt;String\,Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: group\.entrySet\(\)\) \{\n            if \(\!entry\.getKey\(\)\.equals\(\&quot;base\&quot;\)\) \{\n                numOfGroup\.add\(entry\.getValue\(\)\.size\(\)\)\;\n            \}\n        \}\n        int result \= 1\;\n            for\(int i \= 0\; i \&lt; numOfGroup\.size\(\)\; i\+\+\) \{\n                result \= result \* numOfGroup\.get\(i\)\;\n            \}\n        totalRow \= result\;\n    \}\n\n\n\n\n    public Map\&lt;String\, List\&lt;Object\&gt;\&gt; insertData\(Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; group\) \{\n        Map\&lt;String\, List\&lt;Object\&gt;\&gt; result \= new HashMap\&lt;\&gt;\(\)\;\n        int partLevel \= 0\;\n        int wholeLevel \= 0\;\n        for \(Map\.Entry\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: group\.entrySet\(\)\) \{\n            Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondMap \= entry\.getValue\(\)\;\n            for\(Map\.Entry\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondEntry \: secondMap\.entrySet\(\)\) \{\n                Map\&lt;String\, Object\&gt; thirdMap \= secondEntry\.getValue\(\)\;\n                for\(Map\.Entry\&lt;String\, Object\&gt; thirdEntry \: thirdMap\.entrySet\(\)\) \{\n                    for\(int i \= 0\; i \&lt; partLevel\;i\+\+\) \{\n                        \n                    \}\n                \}\n                \}\n            \}\n        \}\n        return  null\;\n    \}\n    \n    public void sublistInsert\(Map\&lt;String\, List\&lt;Object\&gt;\&gt; result\,String entryKey\,Map\.Entry\&lt;String\, Object\&gt; thirdEntry\,int wholeLevel\, int partLevel\) \{\n        for \(int i \= 0\; i \&lt; wholeLevel\; i\+\+\) \{\n            for \(int j \= 0\; j \&lt; partLevel\; j\+\+\) \{\n                result\.put\(getColumn\(entryKey\,thirdEntry\.getKey\(\)\)\,\)\;\n            \}\n        \}\n    \}\n    \n\}\n</find>
+      <find>value</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/spark-gradle-template" value="PREVIEW" />
+        <entry key="$USER_HOME$/sparksc/spark-gradle-template" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/TEST.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/TrueTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/CHEAT.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/orignalKV" />
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FlattJsonView.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="535" />
+    <option name="y" value="143" />
+    <option name="width" value="566" />
+    <option name="height" value="379" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="testJsonTable" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testJsonTable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testJsonTable" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testJsonTable" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testJsonTable" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testJsonTable" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testJsonTable" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testJsonTable" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testJsonTable" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testJsonTable" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.FlattJsonView">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="FlattJsonView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FlattJsonView" />
+      <module name="testJsonTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="testJsonTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TrueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TrueTest" />
+      <module name="testJsonTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.TrueTest" />
+      <item itemvalue="Application.FlattJsonView" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FlattJsonView" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TrueTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0a49fa2-9933-4d4d-bb80-fbd15e7e7026" name="Default" comment="" />
+      <created>1531822646525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531822646525</updated>
+      <workItem from="1531822654269" duration="1288000" />
+      <workItem from="1531881766895" duration="17735000" />
+      <workItem from="1531969702387" duration="6593000" />
+      <workItem from="1531982046861" duration="11687000" />
+      <workItem from="1531994922946" duration="25000" />
+      <workItem from="1532053981141" duration="5560000" />
+      <workItem from="1532060815922" duration="6027000" />
+      <workItem from="1532067953431" duration="347000" />
+      <workItem from="1532068385141" duration="240000" />
+      <workItem from="1532069793293" duration="4295000" />
+      <workItem from="1532074153495" duration="460000" />
+      <workItem from="1532341327314" duration="18000" />
+      <workItem from="1532410487618" duration="599000" />
+      <workItem from="1532411133231" duration="5374000" />
+      <workItem from="1532427510186" duration="952000" />
+      <workItem from="1532571040930" duration="408000" />
+      <workItem from="1532571978307" duration="3089000" />
+      <workItem from="1532575183001" duration="111000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="64808000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1297" height="780" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32616487" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32732734" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15366796" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2910995" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Test.java</url>
+          <line>134</line>
+          <properties class="Test" method="getTotalRows">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Test.java</url>
+          <line>236</line>
+          <properties class="Test" method="getInnerInsertSQL">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orignalKV">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CHEAT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5104">
+          <caret line="232" column="35" lean-forward="true" selection-start-line="232" selection-start-column="35" selection-end-line="232" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orignalKV">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CHEAT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4884">
+          <caret line="222" column="64" selection-start-line="222" selection-start-column="64" selection-end-line="222" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orignalKV">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CHEAT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4356">
+          <caret line="198" column="42" selection-start-line="198" selection-start-column="42" selection-end-line="198" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orignalKV">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CHEAT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4356">
+          <caret line="198" column="42" selection-start-line="198" selection-start-column="42" selection-end-line="198" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="132" column="69" selection-start-line="132" selection-start-column="69" selection-end-line="132" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CHEAT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orignalKV">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>testJsonTable</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.eclipsesource.minimal-json:minimal-json:0.9.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
