@@ -6,48 +6,60 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) {
+
         String json = "{\n" +
-                "\t\"cellphone\": \"18521515392\",\n" +
+                "\t\"finalDecision\": \"REVIEW\",\n" +
+                "\t\"finalScore\": 20,\n" +
                 "\t\"message\": \"查询成功\",\n" +
-                "\t\"name\": \"温程\",\n" +
-                "\t\"resultDesc\": [{\n" +
-                "\t\t\"hitDetailId\": \"5b0673cb87e4300001636195\",\n" +
-                "\t\t\"rules\": [{\n" +
-                "\t\t\t\"detail\": \"未命中羊毛党名单\",\n" +
-                "\t\t\t\"name\": \"命中羊毛党名单\",\n" +
-                "\t\t\t\"result\": false,\n" +
-                "\t\t\t\"ruleId\": \"pycredit_econnoisserur_state\"\n" +
+                "\t\"riskItems\": [{\n" +
+                "\t\t\"decision\": \"Accept\",\n" +
+                "\t\t\"riskDetail\": [{\n" +
+                "\t\t\t\"description\": \"身份证命中中风险关注名单\",\n" +
+                "\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
+                "\t\t\t\"greyListDetails\": [{\n" +
+                "\t\t\t\t\"evidenceTime\": 1506246327000,\n" +
+                "\t\t\t\t\"fraudType\": \"suspiciousLoan\",\n" +
+                "\t\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
+                "\t\t\t\t\"riskLevel\": \"中\",\n" +
+                "\t\t\t\t\"value\": \"362201198509090027\"\n" +
+                "\t\t\t}],\n" +
+                "\t\t\t\"hitTypeDisplayName\": \"借款人身份证\",\n" +
+                "\t\t\t\"type\": \"grey_list\"\n" +
                 "\t\t}],\n" +
-                "\t\t\"score\": 0,\n" +
-                "\t\t\"source\": \"tongdun\",\n" +
-                "\t\t\"sourceName\": \"同盾\",\n" +
-                "\t\t\"suggest\": \"建议通过\"\n" +
+                "\t\t\"riskName\": \"身份证命中中风险关注名单\",\n" +
+                "\t\t\"ruleId\": 12673553,\n" +
+                "\t\t\"score\": 10\n" +
                 "\t}, {\n" +
-                "\t\t\"hitDetailId\": \"5b0673ccd13e300001474d00\",\n" +
-                "\t\t\"rules\": [{\n" +
-                "\t\t\t\"detail\": \"未命中羊毛党名单\",\n" +
-                "\t\t\t\"name\": \"命中羊毛党名单\",\n" +
-                "\t\t\t\"result\": false,\n" +
-                "\t\t\t\"ruleId\": \"pycredit_econnoisserur_state\"\n" +
+                "\t\t\"decision\": \"Accept\",\n" +
+                "\t\t\"riskDetail\": [{\n" +
+                "\t\t\t\"description\": \"手机号命中中风险关注名单\",\n" +
+                "\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
+                "\t\t\t\"greyListDetails\": [{\n" +
+                "\t\t\t\t\"evidenceTime\": 1506246327000,\n" +
+                "\t\t\t\t\"fraudType\": \"suspiciousLoan\",\n" +
+                "\t\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
+                "\t\t\t\t\"riskLevel\": \"中\",\n" +
+                "\t\t\t\t\"value\": \"18311359005\"\n" +
+                "\t\t\t}],\n" +
+                "\t\t\t\"hitTypeDisplayName\": \"借款人手机\",\n" +
+                "\t\t\t\"type\": \"grey_list\"\n" +
                 "\t\t}],\n" +
-                "\t\t\"score\": 0,\n" +
-                "\t\t\"source\": \"pycredit\",\n" +
-                "\t\t\"sourceName\": \"鹏元\",\n" +
-                "\t\t\"suggest\": \"建议通过\"\n" +
+                "\t\t\"riskName\": \"手机号命中中风险关注名单\",\n" +
+                "\t\t\"ruleId\": 12673743,\n" +
+                "\t\t\"score\": 10\n" +
                 "\t}],\n" +
-                "\t\"source\": [\"tongdun\", \"pycredit\"],\n" +
-                "\t\"ssn\": \"45070219861116513X\",\n" +
                 "\t\"status\": \"OK\"\n" +
                 "}";
 
-        Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json);
+ /*       Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json);
         Test test = new Test();
         Map<String, Map<String, Map<String, Object>>> grouped = test.getThreeMap(flattenJson);
         test.getTotalRows(grouped);
-        System.out.println(grouped);
         System.out.println(test.totalRow);
+        System.out.println(grouped);
+
         Map<String, List<Object>> result = test.insertData(grouped);
         test.tranverse(result);
-        System.out.println(test.getFinalSQL(result,"test2"));
+        System.out.println(test.getFinalSQL(result,"test2"));*/
     }
 }
