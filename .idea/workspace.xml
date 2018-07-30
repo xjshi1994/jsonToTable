@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a49fa2-9933-4d4d-bb80-fbd15e7e7026" name="Default" comment="" />
+    <list default="true" id="b0a49fa2-9933-4d4d-bb80-fbd15e7e7026" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/json.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlattJsonView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlattJsonView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlattJsonView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FlattJsonView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TrueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrueTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,20 +24,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="151">
+              <caret line="330" column="19" lean-forward="true" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#14792#14793#0" expanded="true" />
+                <element signature="e#14849#14850#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <file leaf-file-name="json.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/json.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+              <caret line="1" column="92" selection-start-line="1" selection-start-column="92" selection-end-line="1" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="802">
+              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,9 +59,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlattJsonView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrueTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="22">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+=======
+            <state relative-caret-position="528">
+              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+>>>>>>> dev1
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlattJsonView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="44">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
@@ -48,6 +91,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
+            <state relative-caret-position="638">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> dev1
             </state>
           </provider>
         </entry>
@@ -65,6 +115,11 @@
     <findStrings>
       <find>import com\.github\.wnameless\.json\.flattener\.JsonFlattener\;\n\nimport java\.util\.\*\;\n\npublic class Test \{\n    public int totalRow \= 0\;\n    public boolean flag \= true\;\n    public static void main\(String\[\] args\) \{\n        String json \= \&quot;\{\\n\&quot; \+\n                \&quot;\\t\\\&quot;finalDecision\\\&quot;\: \\\&quot;REVIEW\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;finalScore\\\&quot;\: 20\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;message\\\&quot;\: \\\&quot;查询成功\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;riskItems\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;decision\\\&quot;\: \\\&quot;Accept\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskDetail\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;description\\\&quot;\: \\\&quot;身份证命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;greyListDetails\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;evidenceTime\\\&quot;\: 1506246327000\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudType\\\&quot;\: \\\&quot;suspiciousLoan\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;riskLevel\\\&quot;\: \\\&quot;中\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;value\\\&quot;\: \\\&quot;362201198509090027\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;hitTypeDisplayName\\\&quot;\: \\\&quot;借款人身份证\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;type\\\&quot;\: \\\&quot;grey_list\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskName\\\&quot;\: \\\&quot;身份证命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;ruleId\\\&quot;\: 12673553\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;score\\\&quot;\: 10\\n\&quot; \+\n                \&quot;\\t\}\, \{\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;decision\\\&quot;\: \\\&quot;Accept\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskDetail\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;description\\\&quot;\: \\\&quot;手机号命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;greyListDetails\\\&quot;\: \[\{\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;evidenceTime\\\&quot;\: 1506246327000\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudType\\\&quot;\: \\\&quot;suspiciousLoan\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;fraudTypeDisplayName\\\&quot;\: \\\&quot;异常借款\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;riskLevel\\\&quot;\: \\\&quot;中\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\t\\\&quot;value\\\&quot;\: \\\&quot;18311359005\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;hitTypeDisplayName\\\&quot;\: \\\&quot;借款人手机\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\t\\\&quot;type\\\&quot;\: \\\&quot;grey_list\\\&quot;\\n\&quot; \+\n                \&quot;\\t\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;riskName\\\&quot;\: \\\&quot;手机号命中中风险关注名单\\\&quot;\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;ruleId\\\&quot;\: 12673743\,\\n\&quot; \+\n                \&quot;\\t\\t\\\&quot;score\\\&quot;\: 10\\n\&quot; \+\n                \&quot;\\t\}\]\,\\n\&quot; \+\n                \&quot;\\t\\\&quot;status\\\&quot;\: \\\&quot;OK\\\&quot;\\n\&quot; \+\n                \&quot;\}\\n\&quot;\;\n        Map\&lt;String\, Object\&gt; flattenJson \= JsonFlattener\.flattenAsMap\(json\)\;\n        String\[\] a \= flattenJson\.keySet\(\)\.toArray\(new String\[0\]\)\;\n        Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; grouped \= new HashMap\&lt;\&gt;\(\)\;\n\n        for \(Map\.Entry\&lt;String\, Object\&gt; entry \: flattenJson\.entrySet\(\)\) \{\n            String firstKey \= null\;\n            try \{\n                firstKey \= getPreForKey\(entry\.getKey\(\)\)\;\n            \} catch \(Exception e\) \{\n                firstKey \= \&quot;base\&quot;\;\n            \}\n            if \(\! grouped\.containsKey\(firstKey\)\) \{\n                grouped\.put\(firstKey\, new HashMap\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\(\)\)\;\n            \}\n\n            \/\/ second level map\n            Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondMap \= grouped\.get\(firstKey\)\;\n            String secondKey \= removeLast\(entry\.getKey\(\)\)\;\n            if\(\!secondMap\.containsKey\(secondKey\)\) \{\n                secondMap\.put\(secondKey\, new HashMap\&lt;String\, Object\&gt;\(\)\)\;\n            \}\n\n            \/\/ third level map\n            String thirdKey \= getLastField\(entry\.getKey\(\)\)\;\n            Map\&lt;String\, Object\&gt; thirdMap \= secondMap\.get\(secondKey\)\;\n            thirdMap\.put\(thirdKey\, entry\.getValue\(\)\)\;\n        \}\n\n        int k \= 0\;\n        for\(Map\.Entry\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: grouped\.entrySet\(\)\) \{\n            System\.out\.printf\(\&quot;This GROUP \%d \%s\%n\&quot;\, k\+\+\, entry\.getKey\(\)\)\;\n            System\.out\.println\(\)\;\n        \}\n\n        System\.out\.printf\(\&quot;This Table schema \%n\%s\&quot;\, getTableSchema\(grouped\)\)\;\n\n\n        Test test \= new Test\(\)\;\n        test\.getTotalRows\(grouped\)\;\n    \}\n    \/\/ remove \[\]\n    public static String removeBracket\(String str\) \{\n        String result \= \&quot;\&quot;\;\n        result \= str\.replaceAll\(\&quot;\\\\\[\.\*\?\\\\\]\&quot;\, \&quot;\&quot;\)\;\n        return result\;\n    \}\n\n    public static String removeLast\(String str\) \{\n        int lastIndex \= str\.lastIndexOf\(\&quot;\.\&quot;\)\;\n        if \(lastIndex \!\= \-1\) \{\n            return str\.substring\(0\,lastIndex\)\;\n        \}\n        return str\;\n    \}\n\n    public static String getPreForKey\(String str\) throws Exception \{\n        if \(str\.equals\(removeLast\(str\)\)\) \{\n            throw new Exception\(\)\;\n        \}\n        return removeBracket\(removeLast\(str\)\)\;\n    \}\n\n    public static String getLastField\(String str\) \{\n        int lastIndex \= str\.lastIndexOf\(\&quot;\.\&quot;\)\;\n        if \(lastIndex \!\= \-1\) \{\n            return str\.substring\(lastIndex \+ 1\,str\.length\(\)\)\;\n        \}\n        return str\;\n    \}\n\n    public static String getTableSchema\(Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; group\) \{\n        String result \= \&quot;\&quot;\;\n        for\(Map\.Entry\&lt;String\,Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: group\.entrySet\(\)\) \{\n            Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondMap \= entry\.getValue\(\)\;\n            for\(Map\.Entry\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondEntry \: secondMap\.entrySet\(\)\) \{\n                if \(entry\.getKey\(\)\.equals\(\&quot;base\&quot;\)\) \{\n                    result \= result \+ \&quot; \&quot; \+ secondEntry\.getKey\(\)\;\n                \}else \{\n                    Map\&lt;String\, Object\&gt; thirdMap \= secondEntry\.getValue\(\)\;\n                    for\(Map\.Entry\&lt;String\, Object\&gt; thirdEntry \: thirdMap\.entrySet\(\)\)\n                        result \= result \+ \&quot; \&quot; \+ entry\.getKey\(\) \+\&quot;\.\&quot; \+thirdEntry\.getKey\(\)\;\n                \}\n            \}\n        \}\n        return result\;\n    \}\n    \n    public static String getColumn\(String entryKey\, String thirdEntryKey\) \{\n        if \(entryKey\.equals\(\&quot;base\&quot;\)\) \{\n            return thirdEntryKey\;\n        \} else \{\n            return entryKey\+\&quot;\.\&quot;\+thirdEntryKey\;\n        \}\n    \}\n\n    public void getTotalRows\(Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; group\) \{\n        \/\/ Except \&quot;base\&quot; in the first map\, multiply nums of key in each group in second map\.\n        List\&lt;Integer\&gt; numOfGroup \= new LinkedList\&lt;\&gt;\(\)\;\n        for\(Map\.Entry\&lt;String\,Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: group\.entrySet\(\)\) \{\n            if \(\!entry\.getKey\(\)\.equals\(\&quot;base\&quot;\)\) \{\n                numOfGroup\.add\(entry\.getValue\(\)\.size\(\)\)\;\n            \}\n        \}\n        int result \= 1\;\n            for\(int i \= 0\; i \&lt; numOfGroup\.size\(\)\; i\+\+\) \{\n                result \= result \* numOfGroup\.get\(i\)\;\n            \}\n        totalRow \= result\;\n    \}\n\n\n\n\n    public Map\&lt;String\, List\&lt;Object\&gt;\&gt; insertData\(Map\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; group\) \{\n        Map\&lt;String\, List\&lt;Object\&gt;\&gt; result \= new HashMap\&lt;\&gt;\(\)\;\n        int partLevel \= 0\;\n        int wholeLevel \= 0\;\n        for \(Map\.Entry\&lt;String\, Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt;\&gt; entry \: group\.entrySet\(\)\) \{\n            Map\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondMap \= entry\.getValue\(\)\;\n            for\(Map\.Entry\&lt;String\, Map\&lt;String\, Object\&gt;\&gt; secondEntry \: secondMap\.entrySet\(\)\) \{\n                Map\&lt;String\, Object\&gt; thirdMap \= secondEntry\.getValue\(\)\;\n                for\(Map\.Entry\&lt;String\, Object\&gt; thirdEntry \: thirdMap\.entrySet\(\)\) \{\n                    for\(int i \= 0\; i \&lt; partLevel\;i\+\+\) \{\n                        \n                    \}\n                \}\n                \}\n            \}\n        \}\n        return  null\;\n    \}\n    \n    public void sublistInsert\(Map\&lt;String\, List\&lt;Object\&gt;\&gt; result\,String entryKey\,Map\.Entry\&lt;String\, Object\&gt; thirdEntry\,int wholeLevel\, int partLevel\) \{\n        for \(int i \= 0\; i \&lt; wholeLevel\; i\+\+\) \{\n            for \(int j \= 0\; j \&lt; partLevel\; j\+\+\) \{\n                result\.put\(getColumn\(entryKey\,thirdEntry\.getKey\(\)\)\,\)\;\n            \}\n        \}\n    \}\n    \n\}\n</find>
       <find>value</find>
+      <find>67</find>
+      <find>*67</find>
+      <find>**row</find>
+      <find>getC</find>
+      <find>getCo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,11 +138,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/TEST.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/TrueTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/CHEAT.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/orignalKV" />
-        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/FlattJsonView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TrueTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/json.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
       </list>
     </option>
   </component>
@@ -101,19 +158,26 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="535" />
-    <option name="y" value="143" />
-    <option name="width" value="566" />
-    <option name="height" value="379" />
+    <option name="x" value="451" />
+    <option name="y" value="166" />
+    <option name="width" value="564" />
+    <option name="height" value="371" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+>>>>>>> dev1
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,7 +206,13 @@
             <path>
               <item name="jsonToTable" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsonToTable" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="target" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> dev1
             </path>
           </expand>
           <select />
@@ -174,12 +244,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FlattJsonView">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration name="FlattJsonView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FlattJsonView" />
+      <module name="testJsonTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testJsonTable" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -212,6 +287,16 @@
       </option>
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -238,12 +323,14 @@
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.TrueTest" />
       <item itemvalue="Application.FlattJsonView" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FlattJsonView" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TrueTest" />
+        <item itemvalue="Application.FlattJsonView" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -275,12 +362,25 @@
       <workItem from="1532571040930" duration="408000" />
       <workItem from="1532571978307" duration="3089000" />
       <workItem from="1532575183001" duration="111000" />
+<<<<<<< HEAD
       <workItem from="1532920757312" duration="13000" />
+=======
+      <workItem from="1532575584089" duration="1442000" />
+      <workItem from="1532577072796" duration="19530000" />
+      <workItem from="1532656929890" duration="4088000" />
+      <workItem from="1532662892522" duration="1456000" />
+      <workItem from="1532667090362" duration="11460000" />
+      <workItem from="1532679685366" duration="5712000" />
+>>>>>>> dev1
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="64821000" />
+=======
+    <option name="totallyTimeSpent" value="108496000" />
+>>>>>>> dev1
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1297" height="650" extended-state="6" />
@@ -288,6 +388,10 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.27874333" />
+>>>>>>> dev1
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -295,18 +399,22 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.32732734" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19475655" />
+>>>>>>> dev1
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15366796" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26640928" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2910995" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27339572" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -315,6 +423,36 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32616487" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23333333" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.42222223" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13899614" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2910995" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -324,6 +462,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Test.java</url>
@@ -355,12 +494,20 @@
         </state>
       </provider>
     </entry>
+=======
+      <option name="time" value="22" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+>>>>>>> dev1
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2090">
           <caret line="95" column="39" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -401,6 +548,8 @@
           <caret line="232" column="35" lean-forward="true" selection-start-line="232" selection-start-column="35" selection-end-line="232" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -441,6 +590,8 @@
           <caret line="222" column="64" selection-start-line="222" selection-start-column="64" selection-end-line="222" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -481,6 +632,8 @@
           <caret line="198" column="42" selection-start-line="198" selection-start-column="42" selection-end-line="198" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,6 +674,8 @@
           <caret line="198" column="42" selection-start-line="198" selection-start-column="42" selection-end-line="198" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -547,6 +702,8 @@
           <caret line="132" column="69" selection-start-line="132" selection-start-column="69" selection-end-line="132" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -572,6 +729,8 @@
           <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -589,6 +748,8 @@
           <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -628,27 +789,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="96">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state relative-caret-position="638">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FlattJsonView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrueTest.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
+        <state relative-caret-position="528">
+          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> dev1
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="22">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+=======
+        <state relative-caret-position="802">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+>>>>>>> dev1
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/json.properties">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="44">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+=======
+        <state relative-caret-position="22">
+          <caret line="1" column="92" selection-start-line="1" selection-start-column="92" selection-end-line="1" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="330" column="19" lean-forward="true" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#14792#14793#0" expanded="true" />
+            <element signature="e#14849#14850#0" expanded="true" />
+          </folding>
+>>>>>>> dev1
         </state>
       </provider>
     </entry>

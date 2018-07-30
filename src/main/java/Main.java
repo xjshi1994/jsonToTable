@@ -1,9 +1,12 @@
 import com.github.wnameless.json.flattener.JsonFlattener;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 
-public class FlattJsonView {
+public class Main {
+
     public static void main(String[] args) {
+
         String json = "{\n" +
                 "\t\"finalDecision\": \"REVIEW\",\n" +
                 "\t\"finalScore\": 20,\n" +
@@ -48,45 +51,15 @@ public class FlattJsonView {
                 "\t\"status\": \"OK\"\n" +
                 "}";
 
-        Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json);
-        String[] a = flattenJson.keySet().toArray(new String[0]);
-        Map<String, List<String>> grouped = new HashMap<>();
-        for(Map.Entry<String, Object> entry : flattenJson.entrySet()) {
-            System.out.println(entry.getKey() + ":" + entry.getValue());
-        }
+ /*       Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json);
+        Test test = new Test();
+        Map<String, Map<String, Map<String, Object>>> grouped = test.getThreeMap(flattenJson);
+        test.getTotalRows(grouped);
+        System.out.println(test.totalRow);
+        System.out.println(grouped);
 
-        // HOW TO GET TYPE
-/*        for (Map.Entry<String, Object> entry : flattenJson.entrySet()) {
-            System.out.println(entry.getValue().getClass());
-        }*/
-
-/*        int k = 0;
-        for(Map.Entry<String, List<String>> entry : grouped.entrySet()) {
-            System.out.printf("This GROUP %d%n", k++);
-            for(String i : entry.getValue()) {
-                System.out.println(i);
-            }
-        }*/
-    }
-    // remove []
-    public static String removeBracket(String str) {
-        String result = "";
-        result = str.replaceAll("\\[.*?\\]", "");
-        return result;
-    }
-
-    public static String removeLast(String str) {
-        int lastIndex = str.lastIndexOf(".");
-        if (lastIndex != -1) {
-            return str.substring(0,lastIndex);
-        }
-        return str;
-    }
-
-    public static String getPreForKey(String str) throws Exception {
-        if (str.equals(removeLast(str))) {
-            throw new Exception();
-        }
-        return removeBracket(removeLast(str));
+        Map<String, List<Object>> result = test.insertData(grouped);
+        test.tranverse(result);
+        System.out.println(test.getFinalSQL(result,"test2"));*/
     }
 }
