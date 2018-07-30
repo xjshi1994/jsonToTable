@@ -1,16 +1,9 @@
 import com.github.wnameless.json.flattener.JsonFlattener;
-import jdk.internal.util.xml.impl.Input;
-
 import java.io.*;
 import java.util.*;
 
-import static java.lang.System.in;
-import static java.lang.System.setOut;
-
 public class Test {
     public int totalRow = 0;
-    public boolean flag = true;
-    public List<String> typeList;
 
     public Map<String, Map<String, Map<String, Object>>> getThreeMap(Map<String, Object> flattenJson) {
         Map<String, Map<String, Map<String, Object>>> grouped = new HashMap<>();
@@ -23,7 +16,7 @@ public class Test {
                 firstKey = "base";
             }
             if (!grouped.containsKey(firstKey)) {
-                grouped.put(firstKey, new HashMap<String, Map<String, Object>>());
+                grouped.put(firstKey, new HashMap<>());
             }
 
             // second level map
@@ -31,7 +24,7 @@ public class Test {
             String secondKey = removeLast(entry.getKey());
 
             if (!secondMap.containsKey(secondKey)) {
-                secondMap.put(secondKey, new HashMap<String, Object>());
+                secondMap.put(secondKey, new HashMap<>());
             }
 
             // third level map
@@ -58,8 +51,6 @@ public class Test {
         if (lastIndex != -1) {
             return str.substring(0, lastIndex);
         }
-
-
         return str;
     }
 
@@ -81,23 +72,6 @@ public class Test {
             return str.substring(lastIndex + 1, str.length());
         }
         return str;
-    }
-
-    public static String getTableSchema(Map<String, Map<String, Map<String, Object>>> group) {
-        String result = "";
-        for (Map.Entry<String, Map<String, Map<String, Object>>> entry : group.entrySet()) {
-            Map<String, Map<String, Object>> secondMap = entry.getValue();
-            for (Map.Entry<String, Map<String, Object>> secondEntry : secondMap.entrySet()) {
-                if (entry.getKey().equals("base")) {
-                    result = result + " " + secondEntry.getKey();
-                } else {
-                    Map<String, Object> thirdMap = secondEntry.getValue();
-                    for (Map.Entry<String, Object> thirdEntry : thirdMap.entrySet())
-                        result = result + " " + entry.getKey() + "." + thirdEntry.getKey();
-                }
-            }
-        }
-        return result;
     }
 
     public static String getColumn(String entryKey, String thirdEntryKey) {
@@ -141,200 +115,6 @@ public class Test {
     }
 
 
-/*    public Map<String, List<Object>> insertData(Map<String, Map<String, Map<String, Object>>> group) {
-        Map<String, List<Object>> result = new HashMap<>();
-        int partLevel = 1;
-        int wholeLevel = 0;
-        for (Map.Entry<String, Map<String, Map<String, Object>>> entry : group.entrySet()) {
-            Map<String, Map<String, Object>> secondMap = entry.getValue();
-            // base item
-            if (entry.getKey().equals("base")) {
-                for (Map.Entry<String, Map<String, Object>> secondEntry : secondMap.entrySet()) {
-                    Map<String, Object> thirdMap = secondEntry.getValue();
-                    for (Map.Entry<String, Object> thirdEntry : thirdMap.entrySet()) {
-                        String column = getColumn(entry.getKey(), thirdEntry.getKey());
-                        List<Object> sublist = new ArrayList<>();
-                        for (int i = 0; i < totalRow; i++) {
-                            sublist.add(thirdEntry.getValue());
-                        }
-                        result.put(column, sublist);
-                    }
-                }
-            } else {
-                // nested array
-                wholeLevel = totalRow / (partLevel * secondMap.size());
-                for (int i = 0; i < wholeLevel; i++) {
-                    for (Map.Entry<String, Map<String, Object>> secondEntry : secondMap.entrySet()) {
-                        Map<String, Object> thirdMap = secondEntry.getValue();
-                        for (Map.Entry<String, Object> thirdEntry : thirdMap.entrySet()) {
-                            for (int j = 0; j < partLevel; j++) {
-                                // get column
-                                System.out.println("***haha***"+entry.getKey());
-                                String column = getColumn(entry.getKey(), thirdEntry.getKey());
-                                // not exists , new one
-                                if (!result.containsKey(column)) {
-                                    result.put(column, new ArrayList<>());
-                                }
-                                result.get(column).add(thirdEntry.getValue());
-                            }
-                        }
-                    }
-                }
-                partLevel = partLevel * secondMap.size();
-            }
-        }
-        return result;
-    }*/
-
-
-    public static void main(String[] args) {
-        Properties properties = new Properties();
-        try (InputStream in = new FileInputStream("src/main/resources/json.properties");
-             InputStreamReader ir = new InputStreamReader(in, "UTF-8")) {
-            properties.load(ir);
-            String json = properties.getProperty("json");
-            System.out.println(json);
-            String json1 = "{\n" +
-                    "\t\"cisReport\": [{\n" +
-                    "\t\t\"buildEndTime\": \"2018-06-08 11:53:41\",\n" +
-                    "\t\t\"creditBehaviorInfo\": {\n" +
-                    "\t\t\t\"avgCredits\": 0,\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"last12MthsLoanCnt\": 0,\n" +
-                    "\t\t\t\"last1MthsLoanCnt\": 0,\n" +
-                    "\t\t\t\"last3MthsLoanCnt\": 0,\n" +
-                    "\t\t\t\"last6MthsLoanCnt\": 0,\n" +
-                    "\t\t\t\"loanClosedCnt\": 0,\n" +
-                    "\t\t\t\"loanNoClosedCnt\": 0,\n" +
-                    "\t\t\t\"loanOrderCnt\": 0,\n" +
-                    "\t\t\t\"loanOrgCnt\": 0,\n" +
-                    "\t\t\t\"subReportType\": \"14238\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"treatResult\": \"1\",\n" +
-                    "\t\t\t\"undefinedCnt\": 0\n" +
-                    "\t\t},\n" +
-                    "\t\t\"econnoisserurInfo\": {\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"state\": \"0\",\n" +
-                    "\t\t\t\"subReportType\": \"14236\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"treatResult\": \"1\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"fraudRiskInfo\": {\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"state\": \"0\",\n" +
-                    "\t\t\t\"subReportType\": \"14237\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"treatResult\": \"1\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"hasSystemError\": false,\n" +
-                    "\t\t\"historySimpleQueryInfo\": {\n" +
-                    "\t\t\t\"count\": {\n" +
-                    "\t\t\t\t\"last12Month\": 3,\n" +
-                    "\t\t\t\t\"last18Month\": 4,\n" +
-                    "\t\t\t\t\"last1Month\": 2,\n" +
-                    "\t\t\t\t\"last24Month\": 4,\n" +
-                    "\t\t\t\t\"last3Month\": 3,\n" +
-                    "\t\t\t\t\"last6Month\": 3\n" +
-                    "\t\t\t},\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"items\": [{\n" +
-                    "\t\t\t\t\"last12Month\": 1,\n" +
-                    "\t\t\t\t\"last18Month\": 2,\n" +
-                    "\t\t\t\t\"last1Month\": 1,\n" +
-                    "\t\t\t\t\"last24Month\": 2,\n" +
-                    "\t\t\t\t\"last3Month\": 1,\n" +
-                    "\t\t\t\t\"last6Month\": 1,\n" +
-                    "\t\t\t\t\"unitMember\": \"商业银行\"\n" +
-                    "\t\t\t}, {\n" +
-                    "\t\t\t\t\"last12Month\": 1,\n" +
-                    "\t\t\t\t\"last18Month\": 1,\n" +
-                    "\t\t\t\t\"last1Month\": 1,\n" +
-                    "\t\t\t\t\"last24Month\": 1,\n" +
-                    "\t\t\t\t\"last3Month\": 1,\n" +
-                    "\t\t\t\t\"last6Month\": 1,\n" +
-                    "\t\t\t\t\"unitMember\": \"融资租赁及担保类公司\"\n" +
-                    "\t\t\t}, {\n" +
-                    "\t\t\t\t\"last12Month\": 1,\n" +
-                    "\t\t\t\t\"last18Month\": 1,\n" +
-                    "\t\t\t\t\"last1Month\": 0,\n" +
-                    "\t\t\t\t\"last24Month\": 1,\n" +
-                    "\t\t\t\t\"last3Month\": 1,\n" +
-                    "\t\t\t\t\"last6Month\": 1,\n" +
-                    "\t\t\t\t\"unitMember\": \"汽车金融公司\"\n" +
-                    "\t\t\t}],\n" +
-                    "\t\t\t\"subReportType\": \"19902\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"suspectedBulllending\": {\n" +
-                    "\t\t\t\t\"applyFinclCnt\": 0,\n" +
-                    "\t\t\t\t\"applyNetLoanCnt\": 0,\n" +
-                    "\t\t\t\t\"appplyCnt\": 0\n" +
-                    "\t\t\t},\n" +
-                    "\t\t\t\"treatResult\": \"1\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"isFrozen\": false,\n" +
-                    "\t\t\"overdueLoanInfo\": {\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"subReportType\": \"14239\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"treatResult\": \"2\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"personAntiSpoofingDescInfo\": {\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"personAntiSpoofingDesc\": \"1、反欺诈风险评分为20分，风险等级为低，建议通过。\\n2、未命中羊毛党名单。\\n3、未命中欺诈风险名单。\\n4、未检测到信贷行为。\\n5、在近两年被机构查询过4次个人信息。\",\n" +
-                    "\t\t\t\"subReportType\": \"14242\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"treatResult\": \"1\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"personAntiSpoofingInfo\": {\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"hitTypes\": \"被机构查询信息\",\n" +
-                    "\t\t\t\"riskLevel\": \"低\",\n" +
-                    "\t\t\t\"riskScore\": 20,\n" +
-                    "\t\t\t\"subReportType\": \"14241\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"suggest\": \"建议通过\",\n" +
-                    "\t\t\t\"treatResult\": \"1\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"personRiskInfo\": {\n" +
-                    "\t\t\t\"errorMessage\": \"\",\n" +
-                    "\t\t\t\"subReportType\": \"14227\",\n" +
-                    "\t\t\t\"subReportTypeCost\": \"96043\",\n" +
-                    "\t\t\t\"treatResult\": \"2\"\n" +
-                    "\t\t},\n" +
-                    "\t\t\"queryConditions\": [{\n" +
-                    "\t\t\t\"caption\": \"被查询者姓名\",\n" +
-                    "\t\t\t\"name\": \"name\",\n" +
-                    "\t\t\t\"value\": \"温程\"\n" +
-                    "\t\t}, {\n" +
-                    "\t\t\t\"caption\": \"被查询者证件号码\",\n" +
-                    "\t\t\t\"name\": \"documentNo\",\n" +
-                    "\t\t\t\"value\": \"45070219861116513X\"\n" +
-                    "\t\t}, {\n" +
-                    "\t\t\t\"caption\": \"手机号码\",\n" +
-                    "\t\t\t\"name\": \"phone\",\n" +
-                    "\t\t\t\"value\": \"18521515392\"\n" +
-                    "\t\t}],\n" +
-                    "\t\t\"queryReasonID\": \"1\",\n" +
-                    "\t\t\"reportID\": \"2018060811500223\",\n" +
-                    "\t\t\"subReportTypes\": \"96043\",\n" +
-                    "\t\t\"subReportTypesShortCaption\": \"1、个人反欺诈分析报告（96043）\",\n" +
-                    "\t\t\"treatResult\": 1\n" +
-                    "\t}],\n" +
-                    "\t\"message\": \"查询成功\",\n" +
-                    "\t\"status\": \"OK\"\n" +
-                    "}";
-            Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json1);
-            Test test = new Test();
-            Map<String, Map<String, Map<String, Object>>> grouped = test.getThreeMap(flattenJson);
-            System.out.println(test.totalRow);
-            Map<String, List<Object>> dataframe = test.insertData(grouped);
-            System.out.println(test.getFinalSQL(dataframe, "haha1"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     // todo
     public Map<String, List<Object>> insertData(Map<String, Map<String, Map<String, Object>>> group) {
         List<Map<String, List<Object>>> subResult = new LinkedList<>();
@@ -348,14 +128,9 @@ public class Test {
                 subResult.add(getSubMap(str, group));
             }
         }
-
-        System.out.println("sub"+subResult.size());
-
         result = getFinalMap(subResult, group);
-
         return result;
     }
-
     public Map<String, List<Object>> getFinalMap(List<Map<String, List<Object>>> subResult, Map<String, Map<String, Map<String, Object>>> group) {
         Map<String, List<Object>> finalMap = new HashMap<>();
 
@@ -382,8 +157,6 @@ public class Test {
             for(List<Object> l: map.values()) {
                 initSize = l.size();
             }
-            System.out.println("initSize is " + initSize);
-            System.out.println(totalRow);
             wholeLevel = totalRow / (partLevel * initSize);
             insertFinalMap(finalMap, map, wholeLevel, partLevel);
             partLevel = partLevel * initSize;

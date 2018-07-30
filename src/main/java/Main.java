@@ -1,65 +1,52 @@
 import com.github.wnameless.json.flattener.JsonFlattener;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        String json = "{\n" +
-                "\t\"finalDecision\": \"REVIEW\",\n" +
-                "\t\"finalScore\": 20,\n" +
-                "\t\"message\": \"查询成功\",\n" +
-                "\t\"riskItems\": [{\n" +
-                "\t\t\"decision\": \"Accept\",\n" +
-                "\t\t\"riskDetail\": [{\n" +
-                "\t\t\t\"description\": \"身份证命中中风险关注名单\",\n" +
-                "\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
-                "\t\t\t\"greyListDetails\": [{\n" +
-                "\t\t\t\t\"evidenceTime\": 1506246327000,\n" +
-                "\t\t\t\t\"fraudType\": \"suspiciousLoan\",\n" +
-                "\t\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
-                "\t\t\t\t\"riskLevel\": \"中\",\n" +
-                "\t\t\t\t\"value\": \"362201198509090027\"\n" +
-                "\t\t\t}],\n" +
-                "\t\t\t\"hitTypeDisplayName\": \"借款人身份证\",\n" +
-                "\t\t\t\"type\": \"grey_list\"\n" +
-                "\t\t}],\n" +
-                "\t\t\"riskName\": \"身份证命中中风险关注名单\",\n" +
-                "\t\t\"ruleId\": 12673553,\n" +
-                "\t\t\"score\": 10\n" +
-                "\t}, {\n" +
-                "\t\t\"decision\": \"Accept\",\n" +
-                "\t\t\"riskDetail\": [{\n" +
-                "\t\t\t\"description\": \"手机号命中中风险关注名单\",\n" +
-                "\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
-                "\t\t\t\"greyListDetails\": [{\n" +
-                "\t\t\t\t\"evidenceTime\": 1506246327000,\n" +
-                "\t\t\t\t\"fraudType\": \"suspiciousLoan\",\n" +
-                "\t\t\t\t\"fraudTypeDisplayName\": \"异常借款\",\n" +
-                "\t\t\t\t\"riskLevel\": \"中\",\n" +
-                "\t\t\t\t\"value\": \"18311359005\"\n" +
-                "\t\t\t}],\n" +
-                "\t\t\t\"hitTypeDisplayName\": \"借款人手机\",\n" +
-                "\t\t\t\"type\": \"grey_list\"\n" +
-                "\t\t}],\n" +
-                "\t\t\"riskName\": \"手机号命中中风险关注名单\",\n" +
-                "\t\t\"ruleId\": 12673743,\n" +
-                "\t\t\"score\": 10\n" +
-                "\t}],\n" +
-                "\t\"status\": \"OK\"\n" +
-                "}";
-
- /*       Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json);
-        Test test = new Test();
-        Map<String, Map<String, Map<String, Object>>> grouped = test.getThreeMap(flattenJson);
-        test.getTotalRows(grouped);
-        System.out.println(test.totalRow);
-        System.out.println(grouped);
-
-        Map<String, List<Object>> result = test.insertData(grouped);
-        test.tranverse(result);
-        System.out.println(test.getFinalSQL(result,"test2"));*/
+        Properties properties = new Properties();
+        try (InputStream in = new FileInputStream("src/main/resources/json.properties");
+             InputStreamReader ir = new InputStreamReader(in, "UTF-8")) {
+            properties.load(ir);
+            String json = properties.getProperty("json");
+            String json1 = "{\n" +
+                    "    \"error\": 0,\n" +
+                    "    \"status\": \"success\",\n" +
+                    "    \"results\": [\n" +
+                    "        {\n" +
+                    "            \"currentCity\": \"青岛\",\n" +
+                    "            \"index\": [\n" +
+                    "                {\n" +
+                    "                    \"title\": \"穿衣\",\n" +
+                    "                    \"zs\": \"较冷\",\n" +
+                    "                    \"tipt\": \"穿衣指数\",\n" +
+                    "                    \"des\": \"建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。\"\n" +
+                    "                },\n" +
+                    "                {\n" +
+                    "                    \"title\": \"紫外线强度\",\n" +
+                    "                    \"zs\": \"中等\",\n" +
+                    "                    \"tipt\": \"紫外线强度指数\",\n" +
+                    "                    \"des\": \"属中等强度紫外线辐射天气，外出时建议涂擦SPF高于15、PA+的防晒护肤品，戴帽子、太阳镜。\"\n" +
+                    "                }\n" +
+                    "            ]\n" +
+                    "\n" +
+                    "        }\n" +
+                    "    ]\n" +
+                    "}";
+            Map<String, Object> flattenJson = JsonFlattener.flattenAsMap(json1);
+            Test test = new Test();
+            Map<String, Map<String, Map<String, Object>>> grouped = test.getThreeMap(flattenJson);
+            Map<String, List<Object>> dataframe = test.insertData(grouped);
+            System.out.println(test.getFinalSQL(dataframe, "haha1"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
